@@ -1,0 +1,78 @@
+.menu {
+    display: block;
+    overflow: hidden;
+    width: 200px;
+    height: 690px;
+    background-color: #8d8d8d;
+    color: #fff;
+    transition: all 0.5s ease;
+    border-radius: 0px;
+    padding: 10px;
+    box-sizing: border-box;
+    float: left;
+}
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menu a, .menu > label {
+    display: block;
+    height: 25px;
+    padding: 8px;
+    cursor: pointer;
+    color: #000;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: #fff;
+}
+
+.menu #bug {
+    color: #c8c8c8;
+}
+
+.menu #bug:hover {
+    color: #fff;
+}
+
+.menu li:hover, #li > label:hover {
+    color: #fff;
+    border-radius: 10px;
+}
+.menu div {
+    position: absolute;
+    left: 50px;
+    line-height: 1.5;
+    font-size: 1em;
+    font-family: 'Noto Sans KR';
+    padding: 0 0 0 0px;
+}
+
+#expand-menu {
+    display: none;
+}
+#expand-menu:checked ~ ul {
+    display: block;
+    height: auto;
+}
+
+.menu ::before {
+    font-family: 'Material Icons';
+    font-size: 1.5em;
+    float: left;
+    clear: left;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    bottom: 0px;
+    position: absolute;
+}
+
+
+.menu li:nth-child(1) a::before{ content: 'home'; }
+.menu li:nth-child(2) a::before{ content: 'chat'; }
+.menu li:nth-child(3) a::before{ content: 'login'; }
